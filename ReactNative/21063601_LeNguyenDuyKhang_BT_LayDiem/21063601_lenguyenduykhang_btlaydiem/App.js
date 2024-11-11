@@ -6,6 +6,7 @@ import { store } from './store';
 import WelcomeScreen from './WelcomeScreen';
 import CatalogScreen from './CatalogScreen';
 import DetailScreen from './DetailScreen';
+import AddProductScreen from './AddProductScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,11 @@ export default function App() {
             name="Detail" 
             component={DetailScreen}
             options={({ route }) => ({ title: route.params.bike.name })}
+          />
+          <Stack.Screen 
+            name="AddProduct" 
+            component={AddProductScreen}
+            options={{ title: 'Add New Product' }}
           />
         </Stack.Navigator>
       </NavigationContainer>

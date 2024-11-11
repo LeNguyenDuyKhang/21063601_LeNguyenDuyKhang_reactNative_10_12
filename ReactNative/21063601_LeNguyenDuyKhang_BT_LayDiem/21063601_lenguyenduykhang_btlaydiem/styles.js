@@ -188,4 +188,39 @@ export default StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
+  formContainer: {
+    padding: 20,
+  },
+  formTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#333',
+  },
+  input: {
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 15,
+    fontSize: 16,
+    borderWidth:1,
+  },
+  addButton: {
+    backgroundColor: '#ff4444',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  addButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+    paddingTop: 15,
+  },
 });

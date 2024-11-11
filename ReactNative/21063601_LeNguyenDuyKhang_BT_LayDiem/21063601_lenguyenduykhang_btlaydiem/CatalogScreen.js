@@ -3,6 +3,7 @@ import { View, Text, FlatList, TouchableOpacity, ActivityIndicator } from 'react
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBikes } from './store';
 import BikeCard from './BikeCard';
+import { Ionicons } from '@expo/vector-icons';
 import styles from './styles';
 
 const CatalogScreen = ({ navigation }) => {
@@ -31,7 +32,15 @@ const CatalogScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.headerTitle}>The World's Best Bikes</Text>
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>The World's Best Bikes</Text>
+        <TouchableOpacity
+          style={styles.addButton}
+          onPress={() => navigation.navigate('AddProduct')}
+        >
+          <Ionicons name="add-circle-outline" size={24} color="back" />
+        </TouchableOpacity>
+      </View>
       
       <View style={styles.categories}>
         {['all', 'road', 'mountain'].map((category) => (
