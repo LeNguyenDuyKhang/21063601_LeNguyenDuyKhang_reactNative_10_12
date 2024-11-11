@@ -1,0 +1,191 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f8f8f8',
+  },
+  content: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  centered: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  welcomeImage: {
+    width: 300,
+    height: 190,
+    marginBottom: 30,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 18,
+    color: '#e0e0e0',
+    textAlign: 'center',
+    marginBottom: 30,
+  },
+  button: {
+    backgroundColor: '#ff4444',
+    paddingHorizontal: 40,
+    paddingVertical: 15,
+    borderRadius: 25,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    margin: 15,
+    color: '#333',
+  },
+  categories: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingVertical: 15,
+    backgroundColor: '#fff',
+    marginBottom: 10,
+  },
+  categoryButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 8,
+    borderRadius: 20,
+    backgroundColor: '#f0f0f0',
+  },
+  categoryButtonActive: {
+    backgroundColor: '#ff4444',
+  },
+  categoryText: {
+    color: '#333',
+    fontWeight: '500',
+  },
+  categoryTextActive: {
+    color: '#fff',
+  },
+  bikeList: {
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
+  },
+  bikeCard: {
+    width: '48%',
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    marginBottom: 15,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  bikeImage: {
+    width: '100%',
+    height: 90,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  bikeInfo: {
+    padding: 10,
+  },
+  bikeName: {
+    fontSize: 16,
+    fontWeight: '500',
+    marginBottom: 5,
+  },
+  bikePrice: {
+    fontSize: 14,
+    color: '#666',
+  },
+  favoriteButton: {
+    position: 'absolute',
+    right: 10,
+    top: 10,
+    backgroundColor: 'rgba(255,255,255,0.8)',
+    borderRadius: 15,
+    padding: 5,
+  },
+  detailImage: {
+    width: '100%',
+    height: 200,
+  },
+  gradient: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    height: '50%',
+    justifyContent: 'flex-end',
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+  },
+  detailContent: {
+    padding: 20,
+  },
+  detailTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 10,
+  },
+  detailPrice: {
+    fontSize: 22,
+    color: '#666',
+    textDecorationLine: 'line-through',
+  },
+  detailDiscount: {
+    fontSize: 24,
+    color: '#ff4444',
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  descriptionTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: '#333',
+  },
+  description: {
+    fontSize: 16,
+    color: '#666',
+    lineHeight: 24,
+    marginBottom: 30,
+  },
+  addToCartButton: {
+    backgroundColor: '#ff4444',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  addToCartText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  favoriteDetailButton: {
+    position: 'absolute',
+    right: 20,
+    top: 20,
+    backgroundColor: '#fff',
+    padding: 10,
+    borderRadius: 20,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+});
